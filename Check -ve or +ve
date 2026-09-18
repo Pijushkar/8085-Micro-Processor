@@ -1,0 +1,8 @@
+MVI A,06H
+RRC
+JNC jump
+; odd number
+HLT
+
+jump: HLT
+; even NUMBER

@@ -1,0 +1,6 @@
+MVI A,00h
+ORA A
+JZ LOOP
+HLT ;non zero
+LOOP: HLT ;zero
+
