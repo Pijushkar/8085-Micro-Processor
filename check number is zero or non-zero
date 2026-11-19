@@ -1,10 +1,8 @@
-MVI A, 25H 
-MVI B, 45H 
-MVI C, 35H 
-CMP B 
-JNC LOOP 
-MOV A, B 
-LOOP: CMP C 
-JNC DONE 
-MOV A, C
-DONE: HLT 
+MVI A,00H
+ORA 
+JZ ZERO
+;Number is not zero
+HLT
+ZERO:
+;Number is zero
+HLT
