@@ -1,5 +1,5 @@
 MVI A,00H
-ORA 
+ORA A
 JZ ZERO
 ;Number is not zero
 HLT
