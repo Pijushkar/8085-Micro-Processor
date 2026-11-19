@@ -1,7 +1,8 @@
-MVI A,45H
-MVI B,47H
-CMP B
-JNC LOOP
-MOV A,B
+MVI A,05H
+RRC 
+JZ EVEN
+;Number is odd
 HLT
-LOOP: HLT
+EVEN:
+;Number is even
+HLT
